@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="tabataApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tabataApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300*"/>
+                <ColumnDefinition Width="606*"/>
+                <ColumnDefinition Width="505*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="109*"/>
+                <RowDefinition Height="469*"/>
+                <RowDefinition Height="190*"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="SmallLogo"/>
+            <Border BorderBrush="Black" BorderThickness="2,2,2,0" Grid.Row="1" Opacity="0.5" Background="Black" Margin="10,0,0,0">
+                <Grid x:Name="timerGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="230*"/>
+                        <RowDefinition Height="64*"/>
+                        <RowDefinition Height="64*"/>
+                        <RowDefinition Height="64*"/>
+                        <RowDefinition Height="64*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Rounds" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="40,19,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Duration" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="40,30,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Rest" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="40,19,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Cool Down" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="179,19,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Prep" VerticalAlignment="Top"/>
+                </Grid>
+            </Border>
+            <TextBox HorizontalAlignment="Left" Margin="77,70,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Height="120" Width="116"/>
+            <TextBox HorizontalAlignment="Left" Margin="131,46,0,0" TextWrapping="Wrap" Text="Logo" VerticalAlignment="Top"/>
+        </Grid>
+
+    </Grid>
+</Page>

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace tabataApp
 {
     /// <summary>
@@ -16,7 +15,6 @@ namespace tabataApp
     /// </summary>
     class Timer
     {
-    
         private int rounds; // number of working rounds
 
         public int Rounds
@@ -80,6 +78,14 @@ namespace tabataApp
             prepTime = _prep;
             rest = _rest;
             coolDown = _coolDown;
+        }
+
+        /// <summary>
+        /// Creates a countdown based on the provided timer arguments
+        /// </summary>
+        public void countdown()
+        {
+
         }
 
     }
